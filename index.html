@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globus Shoes - Premium Footwear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" data-page="home">GLUBUS</a>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home" class="active">Home</a></li>
+                <li><a href="#" data-page="catalog">Catalog</a></li>
+                <li><a href="#" data-page="wishlist">Wishlist</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="user-icon" data-page="profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </div>
+                <div class="cart-icon" data-page="cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="app">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">STEP INTO<br><span class="accent">STYLE</span></h1>
+                    <p class="hero-subtitle">Discover premium footwear that defines your personality</p>
+                    <button class="btn-primary" data-page="catalog">Shop Now</button>
+                </div>
+                <div class="hero-shoe">
+                    <div class="floating-shoe">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=250&fit=crop" alt="Featured Shoe" class="hero-shoe-img" />
+                    </div>
+                </div>
+                <div class="hero-particles">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <span class="banner-tag">NEW SEASON</span>
+                        <h2>Summer Collection 2026</h2>
+                        <p>Discover the latest trends in footwear with our exclusive summer collection. Comfort meets style.</p>
+                        <button class="btn-primary" data-page="catalog">Explore Now</button>
+                    </div>
+                    <div class="banner-image">
+                        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=300&fit=crop" alt="Summer Collection" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="container">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🚚</div>
+                            <h3>Free Shipping</h3>
+                            <p>On orders over ₹8,300</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Secure Payment</h3>
+                            <p>100% secure checkout</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">↩️</div>
+                            <h3>Easy Returns</h3>
+                            <p>30-day return policy</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💬</div>
+                            <h3>24/7 Support</h3>
+                            <p>Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured">
+                <div class="container">
+                    <h2 class="section-title">Featured <span class="accent">Collection</span></h2>
+                    <div class="featured-grid" id="featured-products"></div>
+                </div>
+            </section>
+
+            <section class="stats">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5000">0</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="200">0</span>
+                            <span class="stat-label">Premium Brands</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Countries Served</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="98">0</span>
+                            <span class="stat-label">% Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="container">
+                    <h2 class="section-title">What Customers <span class="accent">Say</span></h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop" alt="Customer" />
+                            </div>
+                            <p class="testimonial-text">"Amazing quality shoes! The comfort level is unmatched. Highly recommended for anyone looking for premium footwear."</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                            <h4>Michael R.</h4>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="Customer" />
+                            </div>
+                            <p class="testimonial-text">"Best online shoe shopping experience. Great selection, fast delivery, and excellent customer service."</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                            <h4>Sarah K.</h4>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop" alt="Customer" />
+                            </div>
+                            <p class="testimonial-text">"Love my new Nike Air Max! The design is stylish and the fit is perfect. Will definitely shop again."</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                            <h4>David L.</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Stay Updated</h2>
+                        <p>Subscribe for exclusive offers and new arrivals</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit" class="btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers">
+                <div class="container">
+                    <h2 class="section-title">Special <span class="accent">Offers</span></h2>
+                    <div class="offers-grid">
+                        <div class="offer-card">
+                            <div class="offer-badge">FLAT 30% OFF</div>
+                            <div class="offer-image">
+                                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=200&h=120&fit=crop" alt="Running Shoes" class="offer-img" />
+                            </div>
+                            <h3>Summer Sale</h3>
+                            <p>Get flat 30% off on all running shoes</p>
+                            <span class="offer-code">Code: SUMMER30</span>
+                        </div>
+                        <div class="offer-card">
+                            <div class="offer-badge">BUY 2 GET 1</div>
+                            <div class="offer-image">
+                                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=200&h=120&fit=crop" alt="Casual Shoes" class="offer-img" />
+                            </div>
+                            <h3>Casual Collection</h3>
+                            <p>Buy any 2 casual shoes & get 1 free</p>
+                            <span class="offer-code">Code: BUY2GET1</span>
+                        </div>
+                        <div class="offer-card">
+                            <div class="offer-badge">FREE SHIPPING</div>
+                            <div class="offer-image">
+                                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9ea?w=200&h=120&fit=crop" alt="New Arrivals" class="offer-img" />
+                            </div>
+                            <h3>New Arrivals</h3>
+                            <p>Free shipping on orders above ₹12,450</p>
+                            <span class="offer-code">Code: FREESHIP</span>
+                        </div>
+                        <div class="offer-card">
+                            <div class="offer-badge offer-hot">HOT DEAL</div>
+                            <div class="offer-image">
+                                <img src="https://images.unsplash.com/photo-1605037853762-d7f64cde8c79?w=200&h=120&fit=crop" alt="Limited Offer" class="offer-img" />
+                            </div>
+                            <h3>Limited Time</h3>
+                            <p>Extra 20% off on premium boots</p>
+                            <span class="offer-code">Code: BOOTS20</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Catalog Page -->
+        <section id="catalog" class="page">
+            <div class="container">
+                <h2 class="section-title">Our <span class="accent">Catalog</span></h2>
+                <div class="catalog-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="running">Running</button>
+                    <button class="filter-btn" data-category="casual">Casual</button>
+                    <button class="filter-btn" data-category="formal">Formal</button>
+                    <button class="filter-btn" data-category="sports">Sports</button>
+                </div>
+                <div class="catalog-grid" id="catalog-products"></div>
+            </div>
+        </section>
+
+        <!-- Cart Page -->
+        <section id="cart" class="page">
+            <div class="container">
+                <h2 class="section-title">Your <span class="accent">Cart</span></h2>
+                <div class="cart-container">
+                    <div class="cart-items" id="cart-items"></div>
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span class="subtotal">₹0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span class="shipping">Free</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span class="total-amount">₹0</span>
+                        </div>
+                        <button class="btn-primary checkout-btn">Proceed to Checkout</button>
+                    </div>
+                </div>
+                <div class="empty-cart" id="empty-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <h3>Your cart is empty</h3>
+                    <p>Start shopping to add items</p>
+                    <button class="btn-primary" data-page="catalog">Browse Catalog</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wishlist Page -->
+        <section id="wishlist" class="page">
+            <div class="container">
+                <h2 class="section-title">My <span class="accent">Wishlist</span></h2>
+                <div class="wishlist-grid" id="wishlist-items"></div>
+                <div class="empty-wishlist" id="empty-wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <h3>Your wishlist is empty</h3>
+                    <p>Save your favorite shoes here</p>
+                    <button class="btn-primary" data-page="catalog">Browse Catalog</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Page -->
+        <section id="profile" class="page">
+            <div class="container">
+                <h2 class="section-title">My <span class="accent">Profile</span></h2>
+                <div class="profile-container">
+                    <div class="profile-content">
+                        <div class="orders-section">
+                            <h3>Recent Orders</h3>
+                            <div class="orders-list">
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <h4>Order #12345</h4>
+                                        <p>Dec 15, 2025</p>
+                                    </div>
+                                    <div class="order-status delivered">Delivered</div>
+                                    <div class="order-total">₹21,578</div>
+                                </div>
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <h4>Order #12340</h4>
+                                        <p>Nov 28, 2025</p>
+                                    </div>
+                                    <div class="order-status delivered">Delivered</div>
+                                    <div class="order-total">₹12,449</div>
+                                </div>
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <h4>Order #12335</h4>
+                                        <p>Oct 10, 2025</p>
+                                    </div>
+                                    <div class="order-status delivered">Delivered</div>
+                                    <div class="order-total">₹7,459</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addresses-section">
+                            <h3>Saved Addresses</h3>
+                            <div class="addresses-list">
+                                <div class="address-card">
+                                    <h4>Home</h4>
+                                    <p>123 Main Street<br>New York, NY 10001<br>United States</p>
+                                </div>
+                                <div class="address-card">
+                                    <h4>Office</h4>
+                                    <p>456 Business Ave<br>Suite 100<br>New York, NY 10002</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>GLUBUS</h4>
+                    <p>Premium footwear for the modern lifestyle.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="catalog">Catalog</a></li>
+                        <li><a href="#" data-page="wishlist">Wishlist</a></li>
+                        <li><a href="#" data-page="profile">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Globus Shoes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
